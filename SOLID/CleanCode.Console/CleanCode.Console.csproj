@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{73BC1652-8112-4345-95E3-8BC58629C6D5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CleanCode.Console</RootNamespace>
+    <AssemblyName>CleanCode.Console</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CSharpHandbook\03Usage\Enums.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgramistaByc\SOLID\01SRP\BadEmployee.cs" />
+    <Compile Include="ProgramistaByc\SOLID\01SRP\GoodEmployee.cs" />
+    <Compile Include="ProgramistaByc\SOLID\02OCP\AreaCalculatorBreakingRules.cs" />
+    <Compile Include="ProgramistaByc\SOLID\02OCP\AreaCalculateOCP.cs" />
+    <Compile Include="ProgramistaByc\SOLID\02OCP\Rectangle.cs" />
+    <Compile Include="ProgramistaByc\SOLID\02OCP\Shape.cs" />
+    <Compile Include="ProgramistaByc\SOLID\02OCP\Triangle.cs" />
+    <Compile Include="ProgramistaByc\SOLID\03LSP\Car.cs" />
+    <Compile Include="ProgramistaByc\SOLID\03LSP\ElectricCar.cs" />
+    <Compile Include="ProgramistaByc\SOLID\03LSP\Vehicle.cs" />
+    <Compile Include="ProgramistaByc\SOLID\04ISP\IVehicle.cs" />
+    <Compile Include="ProgramistaByc\SOLID\05DIP\Article.cs" />
+    <Compile Include="ProgramistaByc\SOLID\05DIP\ArticleRepository.cs" />
+    <Compile Include="ProgramistaByc\SOLID\05DIP\IArticleRepository.cs" />
+    <Compile Include="ProgramistaByc\SOLID\05DIP\IErpDatabaseContext.cs" />
+    <Compile Include="ProgramistaByc\SOLID\05DIP\IRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Files\C#Handbook.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ProgramistaByc\SOLID\01SRP\01SRP.txt" />
+    <Content Include="ProgramistaByc\SOLID\02OCP\01OCP.txt" />
+    <Content Include="ProgramistaByc\SOLID\03LSP\01LSP.txt" />
+    <Content Include="ProgramistaByc\SOLID\04ISP\01ISP.txt" />
+    <Content Include="ProgramistaByc\SOLID\05DIP\01DIP.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CSharpHandbook\01Naming\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

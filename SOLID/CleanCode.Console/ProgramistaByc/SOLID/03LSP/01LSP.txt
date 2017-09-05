@@ -1,0 +1,10 @@
+﻿Funkcje, które korzystają z referencji bądź wskaźników do klas bazowych, muszą być w stanie poprawnie używać,
+muszą być w stanie poprawnie używać obiektów klas dziedziczących po tych klasach bazowych, bez dokładnej ich znajomości.
+
+Oznacza to w skrócie, że metoda przyjmująca jako parametr referencje do klasy bazowej, powinna działać poprawnie gdy prześlemy
+do niej obiekt tej klasy, ale także w przypadku gdy podstawimy obiekt klasy pochodnej dziedziczącej po tej klasie.
+
+
+W takim razie pokażę odpowiednie rozwiązanie tego problemu. Do tej pory korzystaliśmy z polimorfizmu statycznego. 
+Aby nasza metoda zwracała informacje odpowiednie dla rodzaju przekazanego obiektu, będziemy zmuszeni dokonać poprawek w naszych klasach.
+W klasie Vehicle do definicji metody About dodamy słowo kluczowe virtual, natomiast w dwóch pozostałych klasach słowo override. Dzięki temu w metodzie ShowInfoAboutVehice zostanie wywołana metoda About rzeczywistego typu obiektu do niej przekazanego.

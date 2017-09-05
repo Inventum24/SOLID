@@ -1,0 +1,1 @@
+﻿Klienci nie powinni zależeć od interfejsów z których w pełnie nie korzystają.

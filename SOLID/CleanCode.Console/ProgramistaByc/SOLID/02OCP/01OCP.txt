@@ -1,0 +1,1 @@
+﻿Mówi ona tyle, że nasz kod powinien być tak skonstruowany tak aby był zamknięty na edycję ale był otwarty na rozszerzenia. 

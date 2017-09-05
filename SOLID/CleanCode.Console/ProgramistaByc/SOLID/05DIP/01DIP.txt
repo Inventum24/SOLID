@@ -1,0 +1,5 @@
+﻿Moduł wysokopoziomowe nie powinny zależeć od modułów niskopoziomowych. I  jedne i drugie powinny zależec od abstrakcji.
+
+-Żadna zmienna nie powinna zawierać wskaźnika lub referencji do konkretnej klasy,
+-Żadna klasa nie powinna być klasą pochodną konkretnej klasy,
+-Żadna metoda nie powinna przesłaniać zaimplementowanej metody żadnej ze swoich klas bazowych
