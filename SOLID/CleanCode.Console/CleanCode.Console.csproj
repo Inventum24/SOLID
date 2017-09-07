@@ -43,6 +43,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CSharpHandbook\03Usage\Enums.cs" />
+    <Compile Include="DesignePatterns\DP1_Composite.cs" />
+    <Compile Include="DesignePatterns\DP1_Decorator.cs" />
+    <Compile Include="DesignePatterns\DP1_Facade.cs" />
+    <Compile Include="DesignePatterns\DP2_OCP_ChainOfResponsibility.cs" />
+    <Compile Include="DesignePatterns\DP2_OCP_StrategyPolicy.cs" />
+    <Compile Include="DesignePatterns\DP2_OCP_TemplateMethod.cs" />
+    <Compile Include="DesignePatterns\DP2_OCP_Visitor.cs" />
+    <Compile Include="DesignePatterns\DP4_ISP_Adapter.cs" />
+    <Compile Include="DesignePatterns\DP4_ISP_Facade.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProgramistaByc\SOLID\01SRP\BadEmployee.cs" />
     <Compile Include="ProgramistaByc\SOLID\01SRP\GoodEmployee.cs" />
